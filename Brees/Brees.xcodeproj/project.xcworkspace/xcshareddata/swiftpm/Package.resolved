@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "iqkeyboardmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
+      "state" : {
+        "revision" : "f27ee89e64d774d15a182005aeb02f04d0ab3515",
+        "version" : "7.0.0"
+      }
+    },
+    {
+      "identity" : "jvfloatlabeledtextfield",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jverdi/JVFloatLabeledTextField",
+      "state" : {
+        "revision" : "69c0e80a2d0b9dac52ec37a164c9c5fe0e901038",
+        "version" : "1.2.5"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -7,20 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181C739B2B52DE02005966E9 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 181C739A2B52DE02005966E9 /* IQKeyboardManagerSwift */; };
+		184D1FAC2B505A4100CF27CA /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA32B505A4100CF27CA /* Inter-Regular.ttf */; };
+		184D1FAD2B505A4100CF27CA /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA42B505A4100CF27CA /* Inter-ExtraLight.ttf */; };
+		184D1FAE2B505A4100CF27CA /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA52B505A4100CF27CA /* Inter-Thin.ttf */; };
+		184D1FAF2B505A4100CF27CA /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA62B505A4100CF27CA /* Inter-Medium.ttf */; };
+		184D1FB02B505A4100CF27CA /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA72B505A4100CF27CA /* Inter-Bold.ttf */; };
+		184D1FB12B505A4100CF27CA /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA82B505A4100CF27CA /* Inter-Light.ttf */; };
+		184D1FB22B505A4100CF27CA /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA92B505A4100CF27CA /* Inter-SemiBold.ttf */; };
+		184D1FB32B505A4100CF27CA /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FAA2B505A4100CF27CA /* Inter-ExtraBold.ttf */; };
+		184D1FB42B505A4100CF27CA /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FAB2B505A4100CF27CA /* Inter-Black.ttf */; };
+		184D1FB72B50602000CF27CA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D1FB62B50601F00CF27CA /* Colors.swift */; };
+		186999C22B515E75006EEC2D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186999C12B515E75006EEC2D /* SignUpVC.swift */; };
+		186999C72B51611B006EEC2D /* JVFloatLabeledTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 186999C62B51611B006EEC2D /* JVFloatLabeledTextField */; };
+		1887A75B2B5041AB00CCEA29 /* OnboardingTextCellCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887A7592B5041AB00CCEA29 /* OnboardingTextCellCC.swift */; };
+		1887A75C2B5041AB00CCEA29 /* OnboardingTextCellCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1887A75A2B5041AB00CCEA29 /* OnboardingTextCellCC.xib */; };
 		18D0975C2B5028C500A8A5D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0975B2B5028C500A8A5D6 /* AppDelegate.swift */; };
 		18D0975E2B5028C500A8A5D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0975D2B5028C500A8A5D6 /* SceneDelegate.swift */; };
-		18D097602B5028C500A8A5D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0975F2B5028C500A8A5D6 /* ViewController.swift */; };
-		18D097632B5028C500A8A5D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D097612B5028C500A8A5D6 /* Main.storyboard */; };
+		18D097602B5028C500A8A5D6 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0975F2B5028C500A8A5D6 /* OnboardingVC.swift */; };
+		18D097632B5028C500A8A5D6 /* PreLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D097612B5028C500A8A5D6 /* PreLogin.storyboard */; };
 		18D097652B5028C600A8A5D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D097642B5028C600A8A5D6 /* Assets.xcassets */; };
 		18D097682B5028C600A8A5D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D097662B5028C600A8A5D6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184D1FA32B505A4100CF27CA /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		184D1FA42B505A4100CF27CA /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		184D1FA52B505A4100CF27CA /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		184D1FA62B505A4100CF27CA /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		184D1FA72B505A4100CF27CA /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		184D1FA82B505A4100CF27CA /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		184D1FA92B505A4100CF27CA /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		184D1FAA2B505A4100CF27CA /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		184D1FAB2B505A4100CF27CA /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		184D1FB62B50601F00CF27CA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		186999C12B515E75006EEC2D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		1887A7592B5041AB00CCEA29 /* OnboardingTextCellCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTextCellCC.swift; sourceTree = "<group>"; };
+		1887A75A2B5041AB00CCEA29 /* OnboardingTextCellCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingTextCellCC.xib; sourceTree = "<group>"; };
 		18D097582B5028C500A8A5D6 /* Brees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D0975B2B5028C500A8A5D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D0975D2B5028C500A8A5D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18D0975F2B5028C500A8A5D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18D097622B5028C500A8A5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18D0975F2B5028C500A8A5D6 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		18D097622B5028C500A8A5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PreLogin.storyboard; sourceTree = "<group>"; };
 		18D097642B5028C600A8A5D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D097672B5028C600A8A5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D097692B5028C600A8A5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,12 +59,101 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186999C72B51611B006EEC2D /* JVFloatLabeledTextField in Frameworks */,
+				181C739B2B52DE02005966E9 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184D1FB52B505A5000CF27CA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				184D1FA92B505A4100CF27CA /* Inter-SemiBold.ttf */,
+				184D1FAB2B505A4100CF27CA /* Inter-Black.ttf */,
+				184D1FA72B505A4100CF27CA /* Inter-Bold.ttf */,
+				184D1FAA2B505A4100CF27CA /* Inter-ExtraBold.ttf */,
+				184D1FA42B505A4100CF27CA /* Inter-ExtraLight.ttf */,
+				184D1FA82B505A4100CF27CA /* Inter-Light.ttf */,
+				184D1FA62B505A4100CF27CA /* Inter-Medium.ttf */,
+				184D1FA32B505A4100CF27CA /* Inter-Regular.ttf */,
+				184D1FA52B505A4100CF27CA /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		186999C32B515E7C006EEC2D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				18D0975F2B5028C500A8A5D6 /* OnboardingVC.swift */,
+				1887A7582B50402700CCEA29 /* Xibs */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		186999C42B515E88006EEC2D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				186999C12B515E75006EEC2D /* SignUpVC.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		1887A74D2B50303800CCEA29 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				184D1FB52B505A5000CF27CA /* Fonts */,
+				18D097642B5028C600A8A5D6 /* Assets.xcassets */,
+				184D1FB62B50601F00CF27CA /* Colors.swift */,
+				18D097662B5028C600A8A5D6 /* LaunchScreen.storyboard */,
+			);
+			path = Recources;
+			sourceTree = "<group>";
+		};
+		1887A7502B5031A800CCEA29 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1887A7512B5031B200CCEA29 /* PreLogin */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1887A7512B5031B200CCEA29 /* PreLogin */ = {
+			isa = PBXGroup;
+			children = (
+				186999C32B515E7C006EEC2D /* Onboarding */,
+				186999C42B515E88006EEC2D /* SignUp */,
+			);
+			path = PreLogin;
+			sourceTree = "<group>";
+		};
+		1887A7522B5031B800CCEA29 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				18D097612B5028C500A8A5D6 /* PreLogin.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1887A7532B5031E100CCEA29 /* App Manager */ = {
+			isa = PBXGroup;
+			children = (
+				18D0975B2B5028C500A8A5D6 /* AppDelegate.swift */,
+				18D0975D2B5028C500A8A5D6 /* SceneDelegate.swift */,
+			);
+			path = "App Manager";
+			sourceTree = "<group>";
+		};
+		1887A7582B50402700CCEA29 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				1887A7592B5041AB00CCEA29 /* OnboardingTextCellCC.swift */,
+				1887A75A2B5041AB00CCEA29 /* OnboardingTextCellCC.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		18D0974F2B5028C500A8A5D6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +173,10 @@
 		18D0975A2B5028C500A8A5D6 /* Brees */ = {
 			isa = PBXGroup;
 			children = (
-				18D0975B2B5028C500A8A5D6 /* AppDelegate.swift */,
-				18D0975D2B5028C500A8A5D6 /* SceneDelegate.swift */,
-				18D0975F2B5028C500A8A5D6 /* ViewController.swift */,
-				18D097612B5028C500A8A5D6 /* Main.storyboard */,
-				18D097642B5028C600A8A5D6 /* Assets.xcassets */,
-				18D097662B5028C600A8A5D6 /* LaunchScreen.storyboard */,
+				1887A7532B5031E100CCEA29 /* App Manager */,
+				1887A7502B5031A800CCEA29 /* Modules */,
+				1887A7522B5031B800CCEA29 /* Storyboards */,
+				1887A74D2B50303800CCEA29 /* Recources */,
 				18D097692B5028C600A8A5D6 /* Info.plist */,
 			);
 			path = Brees;
@@ -83,6 +198,10 @@
 			dependencies = (
 			);
 			name = Brees;
+			packageProductDependencies = (
+				186999C62B51611B006EEC2D /* JVFloatLabeledTextField */,
+				181C739A2B52DE02005966E9 /* IQKeyboardManagerSwift */,
+			);
 			productName = Brees;
 			productReference = 18D097582B5028C500A8A5D6 /* Brees.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +230,10 @@
 				Base,
 			);
 			mainGroup = 18D0974F2B5028C500A8A5D6;
+			packageReferences = (
+				186999C52B51611A006EEC2D /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */,
+				181C73992B52DE02005966E9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 18D097592B5028C500A8A5D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +248,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184D1FB12B505A4100CF27CA /* Inter-Light.ttf in Resources */,
 				18D097682B5028C600A8A5D6 /* LaunchScreen.storyboard in Resources */,
+				184D1FAD2B505A4100CF27CA /* Inter-ExtraLight.ttf in Resources */,
+				184D1FB22B505A4100CF27CA /* Inter-SemiBold.ttf in Resources */,
+				184D1FAC2B505A4100CF27CA /* Inter-Regular.ttf in Resources */,
+				184D1FB02B505A4100CF27CA /* Inter-Bold.ttf in Resources */,
+				184D1FB42B505A4100CF27CA /* Inter-Black.ttf in Resources */,
+				1887A75C2B5041AB00CCEA29 /* OnboardingTextCellCC.xib in Resources */,
+				184D1FAF2B505A4100CF27CA /* Inter-Medium.ttf in Resources */,
 				18D097652B5028C600A8A5D6 /* Assets.xcassets in Resources */,
-				18D097632B5028C500A8A5D6 /* Main.storyboard in Resources */,
+				18D097632B5028C500A8A5D6 /* PreLogin.storyboard in Resources */,
+				184D1FAE2B505A4100CF27CA /* Inter-Thin.ttf in Resources */,
+				184D1FB32B505A4100CF27CA /* Inter-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +271,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D097602B5028C500A8A5D6 /* ViewController.swift in Sources */,
+				18D097602B5028C500A8A5D6 /* OnboardingVC.swift in Sources */,
+				184D1FB72B50602000CF27CA /* Colors.swift in Sources */,
 				18D0975C2B5028C500A8A5D6 /* AppDelegate.swift in Sources */,
 				18D0975E2B5028C500A8A5D6 /* SceneDelegate.swift in Sources */,
+				186999C22B515E75006EEC2D /* SignUpVC.swift in Sources */,
+				1887A75B2B5041AB00CCEA29 /* OnboardingTextCellCC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18D097612B5028C500A8A5D6 /* Main.storyboard */ = {
+		18D097612B5028C500A8A5D6 /* PreLogin.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				18D097622B5028C500A8A5D6 /* Base */,
 			);
-			name = Main.storyboard;
+			name = PreLogin.storyboard;
 			sourceTree = "<group>";
 		};
 		18D097662B5028C600A8A5D6 /* LaunchScreen.storyboard */ = {
@@ -297,7 +433,7 @@
 				INFOPLIST_FILE = Brees/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = PreLogin;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +461,7 @@
 				INFOPLIST_FILE = Brees/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = PreLogin;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +499,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		181C73992B52DE02005966E9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		186999C52B51611A006EEC2D /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jverdi/JVFloatLabeledTextField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		181C739A2B52DE02005966E9 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 181C73992B52DE02005966E9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		186999C62B51611B006EEC2D /* JVFloatLabeledTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 186999C52B51611A006EEC2D /* XCRemoteSwiftPackageReference "JVFloatLabeledTextField" */;
+			productName = JVFloatLabeledTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18D097502B5028C500A8A5D6 /* Project object */;
 }
