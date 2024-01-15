@@ -10,6 +10,11 @@ import JVFloatLabeledTextField
 
 class SignUpVC: UIViewController {
 
+    enum ScreenType {
+        case login
+        case signup
+    }
+    
     @IBOutlet private weak var nameTextField: JVFloatLabeledTextField!
     @IBOutlet private weak var backView3: UIView!
     @IBOutlet private weak var backView2: UIView!
@@ -27,6 +32,7 @@ class SignUpVC: UIViewController {
     private var nameText = ""
     private var emailText = ""
     private var passwordText = ""
+    var screenType : ScreenType = .signup
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +59,10 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func registerButton(_ sender: Any) {
-        print(nameText,emailText,passwordText)
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC {
+            vc.nameText = nameText
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     @IBAction func loginButton(_ sender: Any) {
     }
@@ -104,12 +113,23 @@ extension SignUpVC {
     }
     
     func enableRegister() {
-        if nameText.count > 2 && emailText.isValidEmail() && passwordText.isValidPassword() {
-            registerButton.isUserInteractionEnabled = true
-            registerButton.layer.opacity = 1
-        } else {
-            registerButton.isUserInteractionEnabled = false
-            registerButton.layer.opacity = 0.4
+        switch screenType {
+        case .signup:
+            if nameText.count > 2 && emailText.isValidEmail() && passwordText.isValidPassword() {
+                registerButton.isUserInteractionEnabled = true
+                registerButton.layer.opacity = 1
+            } else {
+                registerButton.isUserInteractionEnabled = false
+                registerButton.layer.opacity = 0.4
+            }
+        case .login:
+            if emailText.isValidEmail() && passwordText.isValidPassword() {
+                loginButton.isUserInteractionEnabled = true
+                loginButton.layer.opacity = 1
+            } else {
+                loginButton.isUserInteractionEnabled = false
+                loginButton.layer.opacity = 0.4
+            }
         }
     }
 }
