@@ -15,6 +15,7 @@ class SignUpVC: UIViewController {
         case signup
     }
     
+    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var nameTextField: JVFloatLabeledTextField!
     @IBOutlet private weak var backView3: UIView!
     @IBOutlet private weak var backView2: UIView!
@@ -28,11 +29,12 @@ class SignUpVC: UIViewController {
     @IBOutlet private weak var completeLabel: UILabel!
     @IBOutlet private weak var welcomeLabel: UILabel!
     @IBOutlet private weak var headingLabel: UILabel!
+    @IBOutlet private weak var forgotPasswordButton: UIButton!
     
     private var nameText = ""
     private var emailText = ""
     private var passwordText = ""
-    var screenType : ScreenType = .signup
+    private var screenType : ScreenType = .signup
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,80 +57,145 @@ class SignUpVC: UIViewController {
         default:
             print("error")
         }
-        enableRegister()
+        validationForContinue()
     }
     
     @IBAction func registerButton(_ sender: Any) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC {
-            vc.nameText = nameText
-            navigationController?.pushViewController(vc, animated: true)
+        switch screenType {
+        case .login:
+            screenType = .signup
+            initialSetup()
+        case .signup:
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC {
+                vc.nameText = nameText
+                navigationController?.pushViewController(vc, animated: true)
+            }
         }
     }
+    
     @IBAction func loginButton(_ sender: Any) {
+        switch screenType {
+        case .login:
+            print("LoginDone")
+        case .signup:
+            screenType = .login
+            initialSetup()
+        }
     }
+    
     @IBAction func showButton(_ sender: Any) {
         passwordsTextField.isSecureTextEntry.toggle()
     }
+    
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func forgotPasswordButton(_ sender: Any) {
+        
     }
 }
 
 extension SignUpVC {
     
     func initialSetup() {
-        enableRegister()
+        validationForContinue()
         hideKeyboardWhenTappedAround()
         passwordsTextField.isSecureTextEntry = true
         backView1.layer.cornerRadius = backView1.frame.height/2
         backView2.layer.cornerRadius = backView1.frame.height/2
         backView3.layer.cornerRadius = backView1.frame.height/2
-        nameTextField.font = UIFont(name: "Inter-Medium", size: 14)
-        emailTextField.font = UIFont(name: "Inter-Medium", size: 14)
-        passwordsTextField.font = UIFont(name: "Inter-Medium", size: 14)
-        loginButton.setTitle("Login", for: .normal)
-        loginButton.backgroundColor = Colors.darkBlueButton
         loginButton.layer.cornerRadius = loginButton.frame.height/2
-        loginButton.titleLabel?.font = UIFont(name: "Inter-SemiBold", size: 16)
-        loginButton.setTitleColor(.white, for: .normal)
-        registerButton.setTitle("Register", for: .normal)
-        registerButton.backgroundColor = Colors.darkBlueButton.withAlphaComponent(0.10)
         registerButton.layer.cornerRadius = registerButton.frame.height/2
-        registerButton.titleLabel?.font = UIFont(name: "Inter-Medium", size: 14)
-        registerButton.setTitleColor(Colors.darkBlueButton, for: .normal)
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordsTextField.delegate = self
+        switch screenType {
+        case .login:
+            backView1.isHidden = true
+            infoLabel.isHidden = true
+            forgotPasswordButton.isHidden = false
+            enableButton(button: registerButton)
+            disableButton(button: loginButton)
+        case .signup:
+            backView1.isHidden = false
+            infoLabel.isHidden = false
+            forgotPasswordButton.isHidden = true
+            enableButton(button: loginButton)
+            disableButton(button: registerButton)
+        }
+        setFont()
+        setText()
+        setColor()
+    }
+    
+    func setText() {
+        switch screenType {
+        case .login:
+            welcomeLabel.text = "Welcome back"
+            completeLabel.text = "Hey you’re back, fill in your details to get back in"
+            titleLabel.text = "Login"
+        case .signup:
+            welcomeLabel.text = "Welcome to Brees"
+            completeLabel.text = "Complete the sign up to get started"
+            titleLabel.text = "Sing Up"
+        }
+        loginButton.setTitle("Login", for: .normal)
+        registerButton.setTitle("Register", for: .normal)
         let stringOne = "By signing up, you agree to the Terms of Service and Privacy Policy"
         let stringTwo = "Terms of Service and Privacy Policy"
         let range = (stringOne as NSString).range(of: stringTwo)
         let attributedText = NSMutableAttributedString.init(string: stringOne)
         attributedText.addAttribute(NSAttributedString.Key.foregroundColor, value: Colors.darkBlueButton , range: range)
         infoLabel.attributedText = attributedText
+    }
+    
+    func setFont() {
         infoLabel.font = UIFont(name: "Inter-Medium", size: 14)
         welcomeLabel.font = UIFont(name: "Inter-Bold", size: 24)
         completeLabel.font = UIFont(name: "Inter-Medium", size: 14)
-        welcomeLabel.textColor = Colors.darkBlueText
         headingLabel.font = UIFont(name: "Inter-Medium", size: 16)
-        nameTextField.delegate = self
-        emailTextField.delegate = self
-        passwordsTextField.delegate = self
+        nameTextField.font = UIFont(name: "Inter-Medium", size: 14)
+        emailTextField.font = UIFont(name: "Inter-Medium", size: 14)
+        passwordsTextField.font = UIFont(name: "Inter-Medium", size: 14)
+        registerButton.titleLabel?.font = UIFont(name: "Inter-Medium", size: 14)
+        loginButton.titleLabel?.font = UIFont(name: "Inter-SemiBold", size: 16)
+        forgotPasswordButton.titleLabel?.font = UIFont(name: "Inter-Medium", size: 14)
     }
     
-    func enableRegister() {
+    func setColor() {
+        registerButton.backgroundColor = Colors.darkBlueButton.withAlphaComponent(0.10)
+        loginButton.backgroundColor = Colors.darkBlueButton
+        loginButton.setTitleColor(.white, for: .normal)
+        registerButton.setTitleColor(Colors.darkBlueButton, for: .normal)
+        welcomeLabel.textColor = Colors.darkBlueText
+        forgotPasswordButton.setTitleColor(Colors.darkBlueButton, for: .normal)
+    }
+    
+    func enableButton(button: UIButton) {
+        button.isUserInteractionEnabled = true
+        button.layer.opacity = 1
+    }
+    
+    func disableButton(button: UIButton) {
+        button.isUserInteractionEnabled = false
+        button.layer.opacity = 0.4
+    }
+    
+    func validationForContinue() {
         switch screenType {
         case .signup:
             if nameText.count > 2 && emailText.isValidEmail() && passwordText.isValidPassword() {
-                registerButton.isUserInteractionEnabled = true
-                registerButton.layer.opacity = 1
+                enableButton(button: registerButton)
             } else {
-                registerButton.isUserInteractionEnabled = false
-                registerButton.layer.opacity = 0.4
+                disableButton(button: registerButton)
             }
         case .login:
             if emailText.isValidEmail() && passwordText.isValidPassword() {
-                loginButton.isUserInteractionEnabled = true
-                loginButton.layer.opacity = 1
+                enableButton(button: loginButton)
             } else {
-                loginButton.isUserInteractionEnabled = false
-                loginButton.layer.opacity = 0.4
+                disableButton(button: loginButton)
             }
         }
     }

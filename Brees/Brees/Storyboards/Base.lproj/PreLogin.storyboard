@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QCl-hN-Qvg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dtG-NX-9Vs">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -265,6 +265,16 @@
                                     <action selector="registerButton:" destination="otO-kD-9UF" eventType="touchUpInside" id="8WX-es-rFm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h96-fA-w43">
+                                <rect key="frame" x="250" y="456" width="123" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Forgot Password?"/>
+                                <connections>
+                                    <action selector="forgotPasswordButton:" destination="otO-kD-9UF" eventType="touchUpInside" id="a4U-yM-GkM"/>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPf-dL-8g1"/>
+                                    <action selector="registerButton:" destination="otO-kD-9UF" eventType="touchUpInside" id="ABE-Jg-7qJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c0O-RG-NNk"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -284,6 +294,8 @@
                             <constraint firstItem="CJV-Zy-yHW" firstAttribute="leading" secondItem="PRV-Ja-USM" secondAttribute="leading" constant="20" id="ksW-Ah-HSB"/>
                             <constraint firstItem="c0O-RG-NNk" firstAttribute="bottom" secondItem="CXp-6E-Pda" secondAttribute="bottom" constant="16" id="pw0-ec-JwX"/>
                             <constraint firstItem="MqW-NM-XRE" firstAttribute="leading" secondItem="c0O-RG-NNk" secondAttribute="leading" constant="20" id="qKR-2m-j9H"/>
+                            <constraint firstItem="c0O-RG-NNk" firstAttribute="trailing" secondItem="h96-fA-w43" secondAttribute="trailing" constant="20" id="soq-Qp-WRw"/>
+                            <constraint firstItem="h96-fA-w43" firstAttribute="top" secondItem="CF8-Dh-p06" secondAttribute="bottom" constant="24" id="uup-7k-bJ6"/>
                             <constraint firstItem="c0O-RG-NNk" firstAttribute="bottom" secondItem="MqW-NM-XRE" secondAttribute="bottom" constant="30" id="wxP-tL-w7k"/>
                         </constraints>
                     </view>
@@ -293,6 +305,7 @@
                         <outlet property="backView3" destination="Psr-rI-tvC" id="gOL-7B-a0b"/>
                         <outlet property="completeLabel" destination="209-Ns-lBf" id="WQN-vb-Krw"/>
                         <outlet property="emailTextField" destination="gfY-mh-gyk" id="t3p-4M-TSK"/>
+                        <outlet property="forgotPasswordButton" destination="h96-fA-w43" id="ne6-W8-Scc"/>
                         <outlet property="headingLabel" destination="0Lw-8g-cgD" id="3Qv-5F-oAy"/>
                         <outlet property="infoLabel" destination="CJV-Zy-yHW" id="4Z8-v7-tdt"/>
                         <outlet property="loginButton" destination="CXp-6E-Pda" id="fbf-ZV-qkz"/>
@@ -300,6 +313,7 @@
                         <outlet property="passwordsTextField" destination="Iik-Lt-8IR" id="URg-x1-cmd"/>
                         <outlet property="registerButton" destination="MqW-NM-XRE" id="bgI-YP-u0S"/>
                         <outlet property="showButton" destination="JnM-Sy-1RV" id="cwh-bi-C8q"/>
+                        <outlet property="titleLabel" destination="0Lw-8g-cgD" id="zRS-NF-4jf"/>
                         <outlet property="welcomeLabel" destination="1IL-cf-575" id="k9G-ka-b6e"/>
                     </connections>
                 </viewController>
