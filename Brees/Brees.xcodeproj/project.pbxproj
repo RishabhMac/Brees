@@ -10,6 +10,7 @@
 		18136E892B540DA000FCB9D4 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18136E882B540DA000FCB9D4 /* WelcomeVC.swift */; };
 		18136E8B2B54249400FCB9D4 /* QuickOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18136E8A2B54249400FCB9D4 /* QuickOptionsVC.swift */; };
 		181C739B2B52DE02005966E9 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 181C739A2B52DE02005966E9 /* IQKeyboardManagerSwift */; };
+		18401B942B5A7EC600D6544A /* BudgetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18401B932B5A7EC600D6544A /* BudgetVC.swift */; };
 		184D1FAC2B505A4100CF27CA /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA32B505A4100CF27CA /* Inter-Regular.ttf */; };
 		184D1FAD2B505A4100CF27CA /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA42B505A4100CF27CA /* Inter-ExtraLight.ttf */; };
 		184D1FAE2B505A4100CF27CA /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D1FA52B505A4100CF27CA /* Inter-Thin.ttf */; };
@@ -27,6 +28,8 @@
 		189A6E9F2B568A6C00DDC31B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189A6E9E2B568A6C00DDC31B /* Home.storyboard */; };
 		189A6EA12B568AEB00DDC31B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A6EA02B568AEB00DDC31B /* HomeVC.swift */; };
 		189A6EA42B568D1500DDC31B /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A6EA32B568D1500DDC31B /* CustomTabBar.swift */; };
+		18BFBD472B6A92BC00BB13D6 /* BudgetCellTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFBD452B6A92BC00BB13D6 /* BudgetCellTC.swift */; };
+		18BFBD482B6A92BC00BB13D6 /* BudgetCellTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BFBD462B6A92BC00BB13D6 /* BudgetCellTC.xib */; };
 		18D0975C2B5028C500A8A5D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0975B2B5028C500A8A5D6 /* AppDelegate.swift */; };
 		18D0975E2B5028C500A8A5D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0975D2B5028C500A8A5D6 /* SceneDelegate.swift */; };
 		18D097602B5028C500A8A5D6 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0975F2B5028C500A8A5D6 /* OnboardingVC.swift */; };
@@ -38,6 +41,7 @@
 /* Begin PBXFileReference section */
 		18136E882B540DA000FCB9D4 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		18136E8A2B54249400FCB9D4 /* QuickOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickOptionsVC.swift; sourceTree = "<group>"; };
+		18401B932B5A7EC600D6544A /* BudgetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetVC.swift; sourceTree = "<group>"; };
 		184D1FA32B505A4100CF27CA /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		184D1FA42B505A4100CF27CA /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
 		184D1FA52B505A4100CF27CA /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		189A6E9E2B568A6C00DDC31B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		189A6EA02B568AEB00DDC31B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		189A6EA32B568D1500DDC31B /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		18BFBD452B6A92BC00BB13D6 /* BudgetCellTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCellTC.swift; sourceTree = "<group>"; };
+		18BFBD462B6A92BC00BB13D6 /* BudgetCellTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetCellTC.xib; sourceTree = "<group>"; };
 		18D097582B5028C500A8A5D6 /* Brees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D0975B2B5028C500A8A5D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D0975D2B5028C500A8A5D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18401B922B5A7E7C00D6544A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				189A6EA02B568AEB00DDC31B /* HomeVC.swift */,
+				189A6EA32B568D1500DDC31B /* CustomTabBar.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18401B952B5A7ECF00D6544A /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				18401B932B5A7EC600D6544A /* BudgetVC.swift */,
+				18BFBD452B6A92BC00BB13D6 /* BudgetCellTC.swift */,
+				18BFBD462B6A92BC00BB13D6 /* BudgetCellTC.xib */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
 		184D1FB52B505A5000CF27CA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,8 +196,8 @@
 		189A6EA22B568B7300DDC31B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				189A6EA02B568AEB00DDC31B /* HomeVC.swift */,
-				189A6EA32B568D1500DDC31B /* CustomTabBar.swift */,
+				18401B922B5A7E7C00D6544A /* Home */,
+				18401B952B5A7ECF00D6544A /* Budget */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -274,6 +299,7 @@
 				184D1FB12B505A4100CF27CA /* Inter-Light.ttf in Resources */,
 				18D097682B5028C600A8A5D6 /* LaunchScreen.storyboard in Resources */,
 				184D1FAD2B505A4100CF27CA /* Inter-ExtraLight.ttf in Resources */,
+				18BFBD482B6A92BC00BB13D6 /* BudgetCellTC.xib in Resources */,
 				184D1FB22B505A4100CF27CA /* Inter-SemiBold.ttf in Resources */,
 				184D1FAC2B505A4100CF27CA /* Inter-Regular.ttf in Resources */,
 				184D1FB02B505A4100CF27CA /* Inter-Bold.ttf in Resources */,
@@ -296,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D097602B5028C500A8A5D6 /* OnboardingVC.swift in Sources */,
+				18401B942B5A7EC600D6544A /* BudgetVC.swift in Sources */,
 				18136E8B2B54249400FCB9D4 /* QuickOptionsVC.swift in Sources */,
 				184D1FB72B50602000CF27CA /* Colors.swift in Sources */,
 				189A6EA12B568AEB00DDC31B /* HomeVC.swift in Sources */,
@@ -305,6 +332,7 @@
 				186999C22B515E75006EEC2D /* SignUpVC.swift in Sources */,
 				18136E892B540DA000FCB9D4 /* WelcomeVC.swift in Sources */,
 				1887A75B2B5041AB00CCEA29 /* OnboardingTextCellCC.swift in Sources */,
+				18BFBD472B6A92BC00BB13D6 /* BudgetCellTC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

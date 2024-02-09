@@ -9,17 +9,21 @@ import UIKit
 
 class HomeVC: UIViewController {
 
-    @IBOutlet weak var newAccountBackView: UIView!
-    @IBOutlet weak var notiButton: UIButton!
-    @IBOutlet weak var subHeadingLabel: UILabel!
-    @IBOutlet weak var helloName: UILabel!
+    @IBOutlet private weak var newAccountBackView: UIView!
+    @IBOutlet private weak var notiButton: UIButton!
+    @IBOutlet private weak var subHeadingLabel: UILabel!
+    @IBOutlet private weak var helloName: UILabel!
+    @IBOutlet private weak var addAccountButton: UIButton!
+    @IBOutlet private weak var headerView: UIView!
+    @IBOutlet private weak var searchButton: UIButton!
     
-    @IBOutlet weak var addAccountButton: UIButton!
-    @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var searchButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.backgroundColor = Colors.darkBlueButton
     }
     
     override func viewDidAppear(_ animated: Bool) {
